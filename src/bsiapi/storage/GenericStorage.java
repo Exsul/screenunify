@@ -29,7 +29,7 @@ public class GenericStorage<T> {
        return cache;
     }
 
-    protected T beforeResourceStored( final T resource ) {
+    public T beforeResourceStored( final T resource ) {
         return resource;
     }
 }
