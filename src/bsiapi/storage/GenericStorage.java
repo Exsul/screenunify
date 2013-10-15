@@ -14,7 +14,7 @@ public class GenericStorage<T> {
     private Map<Integer, T> store = new HashMap<Integer, T>();
 
     public T put( final Integer id, final T resource ) {
-       store.put(id, resource);
+       store.put(id, beforeResourceStored(resource));
        return resource;
     }
 
@@ -27,5 +27,9 @@ public class GenericStorage<T> {
        if (cache == null)
            cache = put(id, resource);
        return cache;
+    }
+
+    protected T beforeResourceStored( final T resource ) {
+        return resource;
     }
 }
