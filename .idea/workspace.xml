@@ -12,6 +12,7 @@
     <file path="$PROJECT_DIR$/src/net/exsul/screenunify/drawer/Drawer.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1381940684753" ignored="false" />
     <file path="$PROJECT_DIR$/src/net/exsul/screenunify/bitmap/conversion/BitmapInfoScaleTransformator.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1381940684753" ignored="false" />
     <file path="$PROJECT_DIR$/src/net/exsul/screenunify/bitmap/conversion/base/BitmapInfoTransformatorDecorator.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1381940684753" ignored="false" />
+    <file path="/BitmapInfo.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1381940741466" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,10 +73,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.083333336">
+            <state line="4" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BitmapInfo.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/bitmap/BitmapInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="22" selection-start="492" selection-end="492" vertical-scroll-proportion="0.39583334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BitmapInfo_deprecated.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/bitmap/BitmapInfo_deprecated.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="341" selection-end="1572" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,6 +121,7 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/net/exsul/screenunify/bitmap/BitmapInfo.java" />
       </list>
     </option>
   </component>
@@ -333,7 +353,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -349,7 +369,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -460,7 +480,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.083333336">
+        <state line="4" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/bitmap/BitmapInfo_deprecated.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="341" selection-end="1572" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/bitmap/BitmapInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="22" selection-start="492" selection-end="492" vertical-scroll-proportion="0.39583334">
           <folding />
         </state>
       </provider>
