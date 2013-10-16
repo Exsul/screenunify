@@ -19,3 +19,6 @@ local.properties
 .idea/*
 .classpath
 .project
+=======
+#Mr Developer
+.mr.developer.cfg
