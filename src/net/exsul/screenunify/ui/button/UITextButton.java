@@ -2,7 +2,7 @@ package net.exsul.screenunify.ui.button;
 
 import android.graphics.Paint;
 import android.graphics.Rect;
-import net.exsul.screenunify.bitmap.BitmapInfo;
+import net.exsul.screenunify.bitmap.BitmapInfo_deprecated;
 import net.exsul.screenunify.coords.Coordinate;
 import net.exsul.screenunify.drawer.Drawer;
 import net.exsul.screenunify.text.Text;
@@ -27,7 +27,7 @@ public class UITextButton extends UIButton {
      * @param text текст для отрисовки.
      * @param textPaint стиль отрисовки текста.
      */
-    public UITextButton(final UIElementTouchListener touchListener, final BitmapInfo bitmapFree, final BitmapInfo bitmapPressed, final Coordinate vc, final Text text, final Paint textPaint) {
+    public UITextButton(final UIElementTouchListener touchListener, final BitmapInfo_deprecated bitmapFree, final BitmapInfo_deprecated bitmapPressed, final Coordinate vc, final Text text, final Paint textPaint) {
         super(touchListener, bitmapFree, bitmapPressed, vc);
 
         this.text = text;
