@@ -7,7 +7,7 @@ public class BitmapsCore {
     protected BitmapContainer<Integer> db;
     private static BitmapsCore core;
 
-    public static BitmapsCore getInstance() {
+    protected static BitmapsCore getInstance() {
         if (core == null)
             core = new BitmapsCore();
         return core;
