@@ -30,7 +30,8 @@ public class UITouchInfo {
      */
     public UITouchInfo(final MotionEvent e, final CoordinatesConverter coordinatesConverter) {
         touchVC = coordinatesConverter.screenToVirtual(new Coordinate(e.getX(), e.getY()));
-
+        touchType = Type.STATIC;
+        /* TODO: Temporary removed caused need API level 8
         switch (e.getActionMasked()) {
             case MotionEvent.ACTION_UP:
                 touchType = Type.UP;
@@ -42,6 +43,7 @@ public class UITouchInfo {
                 touchType = Type.STATIC;
                 break;
         }
+        */
     }
 
     /**
