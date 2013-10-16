@@ -1,6 +1,6 @@
 package net.exsul.screenunify.storage;
 
-public class ResourceStorage<T> extends GenericStorage<T> {
+public class ResourceStorage<T> extends GenericStorage<T, Integer> {
     @Override
     public T get( final Integer id ) {
         T cache = super.get(id);
