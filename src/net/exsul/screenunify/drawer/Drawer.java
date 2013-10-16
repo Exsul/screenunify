@@ -2,7 +2,7 @@ package net.exsul.screenunify.drawer;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import net.exsul.screenunify.bitmap.BitmapInfo;
+import net.exsul.screenunify.bitmap.BitmapInfo_deprecated;
 import net.exsul.screenunify.coords.Coordinate;
 import net.exsul.screenunify.coords.convertation.base.CoordinatesConverter;
 import net.exsul.screenunify.text.Text;
@@ -38,15 +38,15 @@ public final class Drawer {
     /**
      * Функция отрисовки битмапа.
      *
-     * @param bitmapInfo информация о битмапе.
+     * @param bitmapInfoDeprecated информация о битмапе.
      * @param vc виртуальные координаты текста.
      */
-    public void drawBitmap(final BitmapInfo bitmapInfo, final Coordinate vc) {
-        Coordinate bitmapVC = new Coordinate(vc.x() + bitmapInfo.w(), vc.y() + bitmapInfo.h());
+    public void drawBitmap(final BitmapInfo_deprecated bitmapInfoDeprecated, final Coordinate vc) {
+        Coordinate bitmapVC = new Coordinate(vc.x() + bitmapInfoDeprecated.w(), vc.y() + bitmapInfoDeprecated.h());
 
         Coordinate sc = coordinatesConverter.virtualToScreen(bitmapVC);
 
-        c.drawBitmap(bitmapInfo.bitmap(), (float)sc.x(), (float)sc.y(), null);
+        c.drawBitmap(bitmapInfoDeprecated.bitmap(), (float)sc.x(), (float)sc.y(), null);
     }
 
     /**

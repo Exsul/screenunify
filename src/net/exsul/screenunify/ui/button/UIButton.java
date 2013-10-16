@@ -1,6 +1,6 @@
 package net.exsul.screenunify.ui.button;
 
-import net.exsul.screenunify.bitmap.BitmapInfo;
+import net.exsul.screenunify.bitmap.BitmapInfo_deprecated;
 import net.exsul.screenunify.coords.Coordinate;
 import net.exsul.screenunify.drawer.Drawer;
 import net.exsul.screenunify.ui.element.UIElement;
@@ -13,7 +13,7 @@ import net.exsul.screenunify.ui.element.UITouchInfo;
  * @author bsi
  */
 public class UIButton extends UIElement {
-    private final BitmapInfo bitmapFree, bitmapPressed;
+    private final BitmapInfo_deprecated bitmapFree, bitmapPressed;
     protected final Coordinate vc;
 
     /**
@@ -24,7 +24,7 @@ public class UIButton extends UIElement {
      * @param bitmapPressed  битмап, отрисовывающийся, когда кнопка нажата.
      * @param vc виртуальные координаты кнопки.
      */
-    public UIButton(final UIElementTouchListener touchListener, final BitmapInfo bitmapFree, final BitmapInfo bitmapPressed, final Coordinate vc) {
+    public UIButton(final UIElementTouchListener touchListener, final BitmapInfo_deprecated bitmapFree, final BitmapInfo_deprecated bitmapPressed, final Coordinate vc) {
         super(touchListener);
 
         this.bitmapFree = bitmapFree;

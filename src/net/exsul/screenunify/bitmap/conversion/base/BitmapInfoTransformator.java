@@ -1,6 +1,6 @@
 package net.exsul.screenunify.bitmap.conversion.base;
 
-import net.exsul.screenunify.bitmap.BitmapInfo;
+import net.exsul.screenunify.bitmap.BitmapInfo_deprecated;
 
 /**
  * Класс преобразования информации о битмапе.
@@ -11,9 +11,9 @@ public abstract class BitmapInfoTransformator {
     /**
      * Функция преобразования информации о битмапе.
      *
-     * @param bitmapInfo битмап для преобразования.
+     * @param bitmapInfoDeprecated битмап для преобразования.
      *
      * @return преобразованный битмап.
      */
-    public abstract BitmapInfo convert(final BitmapInfo bitmapInfo);
+    public abstract BitmapInfo_deprecated convert(final BitmapInfo_deprecated bitmapInfoDeprecated);
 }

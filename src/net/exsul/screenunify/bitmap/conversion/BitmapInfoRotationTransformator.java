@@ -2,7 +2,7 @@ package net.exsul.screenunify.bitmap.conversion;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
-import net.exsul.screenunify.bitmap.BitmapInfo;
+import net.exsul.screenunify.bitmap.BitmapInfo_deprecated;
 import net.exsul.screenunify.bitmap.conversion.base.BitmapInfoTransformator;
 import net.exsul.screenunify.bitmap.conversion.base.BitmapInfoTransformatorDecorator;
 import net.exsul.screenunify.metrics.Metrics;
@@ -38,17 +38,17 @@ public final class BitmapInfoRotationTransformator extends BitmapInfoTransformat
     }
 
     @Override
-    protected BitmapInfo convertInner(final BitmapInfo bitmapInfo) {
+    protected BitmapInfo_deprecated convertInner(final BitmapInfo_deprecated bitmapInfoDeprecated) {
         if (screenMetrics.w() >= screenMetrics.h()) {
-            return bitmapInfo;
+            return bitmapInfoDeprecated;
         } else {
             Matrix matrix = new Matrix();
 
             matrix.postRotate(-90);
 
-            Bitmap rotatedBitmap = Bitmap.createBitmap(bitmapInfo.bitmap(), 0, 0, bitmapInfo.w(), bitmapInfo.h(), matrix, true);
+            Bitmap rotatedBitmap = Bitmap.createBitmap(bitmapInfoDeprecated.bitmap(), 0, 0, bitmapInfoDeprecated.w(), bitmapInfoDeprecated.h(), matrix, true);
 
-            return new BitmapInfo(rotatedBitmap, bitmapInfo.w(), bitmapInfo.h(), !bitmapInfo.rotated());
+            return new BitmapInfo_deprecated(rotatedBitmap, bitmapInfoDeprecated.w(), bitmapInfoDeprecated.h(), !bitmapInfoDeprecated.rotated());
         }
     }
 }

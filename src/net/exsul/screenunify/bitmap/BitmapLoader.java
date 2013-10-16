@@ -16,7 +16,7 @@ import java.util.Map;
 public final class BitmapLoader {
     private final Resources resources;
 
-    private final Map<Integer, BitmapInfo> bitmapsInfo = new HashMap<Integer, BitmapInfo>();
+    private final Map<Integer, BitmapInfo_deprecated> bitmapsInfo = new HashMap<Integer, BitmapInfo_deprecated>();
 
     /**
      * Конструктор класса.
@@ -37,7 +37,7 @@ public final class BitmapLoader {
     public void load(final int id, final BitmapInfoTransformator bitmapInfoTransformator) {
         Bitmap bitmap = BitmapFactory.decodeResource(resources, id);
 
-        bitmapsInfo.put(id, bitmapInfoTransformator.convert(new BitmapInfo(bitmap)));
+        bitmapsInfo.put(id, bitmapInfoTransformator.convert(new BitmapInfo_deprecated(bitmap)));
     }
 
     /**
@@ -47,7 +47,7 @@ public final class BitmapLoader {
      *
      * @return информация о загруженном битмапе.
      */
-    public BitmapInfo get(final int id) {
+    public BitmapInfo_deprecated get(final int id) {
         return bitmapsInfo.get(id);
     }
 }

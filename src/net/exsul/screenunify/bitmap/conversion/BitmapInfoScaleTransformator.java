@@ -2,7 +2,7 @@ package net.exsul.screenunify.bitmap.conversion;
 
 
 import android.graphics.Bitmap;
-import net.exsul.screenunify.bitmap.BitmapInfo;
+import net.exsul.screenunify.bitmap.BitmapInfo_deprecated;
 import net.exsul.screenunify.bitmap.conversion.base.BitmapInfoTransformator;
 import net.exsul.screenunify.bitmap.conversion.base.BitmapInfoTransformatorDecorator;
 import net.exsul.screenunify.metrics.Metrics;
@@ -40,18 +40,18 @@ public final class BitmapInfoScaleTransformator extends BitmapInfoTransformatorD
     }
 
     @Override
-    protected BitmapInfo convertInner(final BitmapInfo bitmapInfo) {
+    protected BitmapInfo_deprecated convertInner(final BitmapInfo_deprecated bitmapInfoDeprecated) {
         int newW = (int)(screenMetrics.w() * nw);
-        int newH = (int)(bitmapInfo.h() * screenMetrics.w() * nw / bitmapInfo.w());
+        int newH = (int)(bitmapInfoDeprecated.h() * screenMetrics.w() * nw / bitmapInfoDeprecated.w());
 
         final Bitmap scaledBitmap;
 
-        if (bitmapInfo.rotated()) {
-            scaledBitmap = Bitmap.createScaledBitmap(bitmapInfo.bitmap(), newH, newW, true);
+        if (bitmapInfoDeprecated.rotated()) {
+            scaledBitmap = Bitmap.createScaledBitmap(bitmapInfoDeprecated.bitmap(), newH, newW, true);
         } else {
-            scaledBitmap = Bitmap.createScaledBitmap(bitmapInfo.bitmap(), newW, newH, true);
+            scaledBitmap = Bitmap.createScaledBitmap(bitmapInfoDeprecated.bitmap(), newW, newH, true);
         }
 
-        return new BitmapInfo(scaledBitmap, newW, newH, bitmapInfo.rotated());
+        return new BitmapInfo_deprecated(scaledBitmap, newW, newH, bitmapInfoDeprecated.rotated());
     }
 }
