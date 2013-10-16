@@ -18,7 +18,7 @@ public class BitmapContainer extends GenericStorage<BitmapDistortionStorage, Dis
     }
 
     @Override
-    public BitmapDistortionStorage onKeyMiss( final DistortionInfo d ) {
+    protected BitmapDistortionStorage onKeyMiss( final DistortionInfo d ) {
         return new BitmapDistortionStorage(resources, d);
     }
 }

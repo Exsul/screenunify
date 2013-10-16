@@ -9,11 +9,11 @@ public class ResourceStorage<T> extends GenericStorage<T, Integer> {
     }
 
     @Override
-    public T onKeyMiss( final Integer id ) {
+    protected T onKeyMiss( final Integer id ) {
         return load(id);
     }
 
-    public T load( final int id ) {
+    protected T load( final int id ) {
        throw new UnsupportedOperationException(
                "Resource load generic method is obvious, you should overload " +
                "ResourceStorage<T> loadById with template specification");

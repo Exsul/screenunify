@@ -7,6 +7,7 @@ import net.exsul.screenunify.bitmap.BitmapInfo_deprecated;
  *
  * @author bsi
  */
+@Deprecated
 public abstract class BitmapInfoTransformator {
     /**
      * Функция преобразования информации о битмапе.

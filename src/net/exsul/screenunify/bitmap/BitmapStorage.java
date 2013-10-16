@@ -14,7 +14,7 @@ public class BitmapStorage extends ResourceStorage<Bitmap> {
     }
 
     @Override
-    public Bitmap load( final int id ) {
+    protected Bitmap load( final int id ) {
         return BitmapFactory.decodeResource(resources, id);
     }
 }

@@ -10,6 +10,7 @@ import java.util.Map;
  *
  * @author bsi
  */
+@Deprecated
 public final class BitmapLoadersBase {
     private static BitmapLoadersBase instance = new BitmapLoadersBase();
 

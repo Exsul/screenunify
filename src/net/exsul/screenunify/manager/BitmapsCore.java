@@ -4,7 +4,6 @@ import android.content.res.Resources;
 import net.exsul.screenunify.bitmap.BitmapContainer;
 
 public class BitmapsCore {
-    // TODO: Replace Integer with valid distortion container
     private BitmapContainer db;
     private static BitmapsCore core;
 

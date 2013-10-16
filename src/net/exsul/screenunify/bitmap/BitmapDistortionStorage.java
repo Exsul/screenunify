@@ -11,7 +11,7 @@ public class BitmapDistortionStorage extends BitmapStorage {
     }
 
     @Override
-    public Bitmap load( final int id ) {
+    protected Bitmap load( final int id ) {
         Bitmap t = super.load(id);
         // TODO: make distortion
         return t;

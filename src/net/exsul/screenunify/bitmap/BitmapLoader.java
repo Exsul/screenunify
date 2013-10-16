@@ -13,6 +13,7 @@ import java.util.Map;
  *
  * @author bsi
  */
+@Deprecated
 public final class BitmapLoader {
     private final Resources resources;
 

@@ -13,6 +13,7 @@ import net.exsul.screenunify.metrics.Metrics;
  *
  * @author bsi
  */
+@Deprecated
 public final class BitmapInfoScaleTransformator extends BitmapInfoTransformatorDecorator {
     private final Metrics screenMetrics;
 

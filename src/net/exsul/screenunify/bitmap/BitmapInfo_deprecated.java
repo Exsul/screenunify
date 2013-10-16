@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
  *
  * @author bsi
  */
+@Deprecated
 public class BitmapInfo_deprecated {
     private final Bitmap bitmap;
     private final int w, h;

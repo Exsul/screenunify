@@ -28,11 +28,11 @@ public class GenericStorage<T, K> implements AbstractStorage<T, K> {
        return cache;
     }
 
-    public T beforeResourceStored( final T resource ) {
+    protected T beforeResourceStored( final T resource ) {
         return resource;
     }
 
-    public T onKeyMiss( final K id ) {
+    protected T onKeyMiss( final K id ) {
         return null;
     }
 }
