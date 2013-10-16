@@ -2,9 +2,10 @@ package net.exsul.screenunify.bitmap;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
+import net.exsul.screenunify.distortion.info.DistortionInfo;
 import net.exsul.screenunify.storage.GenericStorage;
 
-public class BitmapContainer<DistortionInfo> extends GenericStorage<BitmapDistortionStorage, DistortionInfo> {
+public class BitmapContainer extends GenericStorage<BitmapDistortionStorage, DistortionInfo> {
     private Resources resources;
 
     public BitmapContainer(Resources _resources) {

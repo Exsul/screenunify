@@ -2,11 +2,11 @@ package net.exsul.screenunify.bitmap;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import net.exsul.screenunify.distortion.info.DistortionInfo;
 
 public class BitmapDistortionStorage extends BitmapStorage {
-    private Integer distortion;
-    public BitmapDistortionStorage( final Resources _resources, final Integer distortion ) {
+    private DistortionInfo distortion;
+    public BitmapDistortionStorage( final Resources _resources, final DistortionInfo distortion ) {
         super(_resources);
     }
 
