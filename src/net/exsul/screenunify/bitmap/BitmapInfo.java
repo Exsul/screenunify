@@ -3,8 +3,8 @@ package net.exsul.screenunify.bitmap;
 import android.graphics.Bitmap;
 
 public class BitmapInfo {
-    public final int w, h;
-    public final boolean rotated;
+    public int w, h;
+    public boolean rotated;
 
     public BitmapInfo(final Bitmap bitmap) {
         this(bitmap, bitmap.getWidth(), bitmap.getHeight(), false);
@@ -22,32 +22,5 @@ public class BitmapInfo {
         this.w = w;
         this.h = h;
         this.rotated = rotated;
-    }
-
-    /**
-     * Функция получения виртуальной ширины битмапа.
-     *
-     * @return виртуальная ширина битмапа.
-     */
-    public int w() {
-        return w;
-    }
-
-    /**
-     * Функция получения виртуальной высоты битмапа.
-     *
-     * @return виртуальная высота битмапа.
-     */
-    public int h() {
-        return h;
-    }
-
-    /**
-     * Функция получения информации о том, был ли битмап повернут.
-     *
-     * @return true, если была повернут, false иначе.
-     */
-    public boolean rotated() {
-        return rotated;
     }
 }
