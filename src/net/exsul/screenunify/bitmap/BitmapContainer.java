@@ -11,7 +11,7 @@ public class BitmapContainer<DistortionInfo> extends GenericStorage<BitmapStorag
         resources = _resources;
     }
 
-    Bitmap get( final DistortionInfo d, final Integer id ) {
+    public Bitmap get( final DistortionInfo d, final Integer id ) {
         BitmapStorage bs = get(d);
         return bs.get(id);
     }
