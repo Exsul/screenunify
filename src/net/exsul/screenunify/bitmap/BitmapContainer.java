@@ -4,7 +4,7 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import net.exsul.screenunify.storage.GenericStorage;
 
-public class BitmapContainer<DistortionInfo> extends GenericStorage<BitmapStorage, DistortionInfo> {
+public class BitmapContainer<DistortionInfo> extends GenericStorage<BitmapDistortionStorage, DistortionInfo> {
     private Resources resources;
 
     public BitmapContainer(Resources _resources) {
@@ -17,7 +17,7 @@ public class BitmapContainer<DistortionInfo> extends GenericStorage<BitmapStorag
     }
 
     @Override
-    public BitmapStorage onKeyMiss( final DistortionInfo d ) {
-        return new BitmapStorage(resources);
+    public BitmapDistortionStorage onKeyMiss( final DistortionInfo d ) {
+        return new BitmapDistortionStorage(resources, d);
     }
 }
