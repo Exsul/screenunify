@@ -19,7 +19,13 @@ public class GenericStorage<T, K> {
     }
 
     public T get( final K id ) {
-      return store.get(id);
+       T cache = store.get(id);
+       if (cache == null) {
+           T new_value = onKeyMiss(id);
+           if (new_value != null)
+               cache = put(id, new_value);
+       }
+       return cache;
     }
 
     public T get( final K id, final T resource ) {
@@ -31,5 +37,9 @@ public class GenericStorage<T, K> {
 
     public T beforeResourceStored( final T resource ) {
         return resource;
+    }
+
+    public T onKeyMiss( final K id ) {
+        return null;
     }
 }
