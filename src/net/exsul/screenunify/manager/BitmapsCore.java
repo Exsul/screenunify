@@ -7,7 +7,9 @@ import net.exsul.screenunify.bitmap.distortion.RotationDistortionBitmap;
 import net.exsul.screenunify.distortion.Distortion;
 import net.exsul.screenunify.distortion.NullDistortion;
 import net.exsul.screenunify.distortion.info.DistortionInfo;
+import net.exsul.screenunify.distortion.info.NullDistortionInfo;
 import net.exsul.screenunify.distortion.info.RotationDistortionInfo;
+import net.exsul.screenunify.distortion.managers.DistortionPerformerChooser;
 import net.exsul.screenunify.metrics.Metrics;
 
 public class BitmapsCore {
@@ -19,7 +21,8 @@ public class BitmapsCore {
     }
 
     private void InitDistortion() {
-
+        DistortionPerformerChooser<Bitmap> ret = new DistortionPerformerChooser<Bitmap>();
+        ret.put(RotationDistortionInfo.class, new RotationDistortionBitmap());
     }
 
     BitmapContainer db() {
@@ -49,9 +52,9 @@ public class BitmapsCore {
     }
 
     @Deprecated
-    public Distortion<Bitmap> defaultDistortion() {
+    public DistortionInfo defaultDistortion() {
         assert(screenMetrics != null);
-        Distortion<Bitmap> ret = new NullDistortion<Bitmap>();
+        DistortionInfo ret = new NullDistortionInfo();
 
         /* TODO: Scaling bitmap as you want
         int newW = (int)(screenMetrics.w() * nw);
@@ -61,7 +64,7 @@ public class BitmapsCore {
         scaledBitmap = Bitmap.createScaledBitmap(bitmapInfoDeprecated.bitmap(), newW, newH, true);
         */
         if (screenMetrics.w() < screenMetrics.h())
-            ret.next(new RotationDistortionBitmap(new RotationDistortionInfo(90)));
+            ret.next(new RotationDistortionInfo(90));
         return ret;
     }
 }

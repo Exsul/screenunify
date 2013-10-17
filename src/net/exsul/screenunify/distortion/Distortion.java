@@ -1,24 +1,13 @@
 package net.exsul.screenunify.distortion;
 
+import net.exsul.screenunify.distortion.info.DistortionInfo;
+
 public abstract class Distortion<T> {
     private Distortion<T> next;
 
-    public T apply( final T obj ) {
-        return next(obj);
-    }
+    public abstract T apply( final T obj );
 
-    public void next( final Distortion<T> _next ) {
-        if (next != null)
-            next.next(_next);
-        else
-            next = _next;
-    }
+    public void update( final DistortionInfo obj ) {
 
-    public T next( final T obj ) {
-        if (next == null)
-            return obj;
-
-        T ret = next.apply(obj);
-        return next.next(obj);
     }
 }

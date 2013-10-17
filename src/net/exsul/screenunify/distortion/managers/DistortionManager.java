@@ -30,7 +30,7 @@ public class DistortionManager {
     public static <DistortionObject, DistortionType extends DistortionInfo>
       DistortionObject applyDistortion( final DistortionObject obj, final DistortionType info ) {
         Distortion<DistortionObject> distortion = getDistortion(info.getClass());
-        // TODO: Change distortion value
+        distortion.update(info);
         return distortion.apply(obj);
     }
 }

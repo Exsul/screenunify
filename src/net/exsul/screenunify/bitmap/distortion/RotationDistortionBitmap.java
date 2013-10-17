@@ -6,10 +6,6 @@ import net.exsul.screenunify.distortion.RotationDistortion;
 import net.exsul.screenunify.distortion.info.RotationDistortionInfo;
 
 public class RotationDistortionBitmap extends RotationDistortion<Bitmap> {
-    public RotationDistortionBitmap( final RotationDistortionInfo a ) {
-        super(a);
-    }
-
     @Override
     public Bitmap apply( final Bitmap origin ) {
         Matrix matrix = new Matrix();
