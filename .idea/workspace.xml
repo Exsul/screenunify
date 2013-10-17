@@ -31,6 +31,7 @@
     <file path="$PROJECT_DIR$/src/net/exsul/screenunify/primitives/ui/element/UIElement.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382042590502" ignored="false" />
     <file path="$PROJECT_DIR$/src/net/exsul/screenunify/primitives/ui/button/UIButton.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382042660343" ignored="false" />
     <file path="/BitmapManager.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382042911979" ignored="false" />
+    <file path="/ScaleDistortion.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382045353499" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,15 +92,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BitmapDistortionStorage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/bitmap/storage/BitmapDistortionStorage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="27" selection-start="932" selection-end="932" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BitmapsCore.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/manager/BitmapsCore.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -127,10 +119,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RotationDistortion.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RotationDistortion.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/RotationDistortion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="320" selection-end="320" vertical-scroll-proportion="0.34228188">
+            <state line="12" column="23" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScaleDistortion.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/ScaleDistortion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="5" selection-start="845" selection-end="845" vertical-scroll-proportion="0.7718121">
               <folding />
             </state>
           </provider>
@@ -191,7 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/net/exsul/screenunify/distortion/info/NullDistortionInfo.java" />
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/manager/BitmapsCore.java" />
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/bitmap/BitmapContainer.java" />
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/distortion/RotationDistortion.java" />
@@ -207,6 +207,7 @@
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/resource/manager/BitmapManager.java" />
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/Distortion.java" />
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/RotationDistortion.java" />
+        <option value="$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/ScaleDistortion.java" />
       </list>
     </option>
   </component>
@@ -661,15 +662,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/storage/ChildStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/managers/DistortionByObjectChooser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="62" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
@@ -770,7 +762,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/RotationDistortion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="320" selection-end="320" vertical-scroll-proportion="0.34228188">
+        <state line="12" column="23" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/ScaleDistortion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="5" selection-start="845" selection-end="845" vertical-scroll-proportion="0.7718121">
           <folding />
         </state>
       </provider>
