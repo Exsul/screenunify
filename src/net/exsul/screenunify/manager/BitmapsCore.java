@@ -3,12 +3,10 @@ package net.exsul.screenunify.manager;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import net.exsul.screenunify.bitmap.BitmapContainer;
-import net.exsul.screenunify.bitmap.distortion.RotationDistortionBitmap;
+import net.exsul.screenunify.bitmap.distortion.RotationPerformerBitmap;
 import net.exsul.screenunify.distortion.Distortion;
 import net.exsul.screenunify.distortion.NullDistortion;
-import net.exsul.screenunify.distortion.info.DistortionInfo;
-import net.exsul.screenunify.distortion.info.NullDistortionInfo;
-import net.exsul.screenunify.distortion.info.RotationDistortionInfo;
+import net.exsul.screenunify.distortion.RotationDistortion;
 import net.exsul.screenunify.distortion.managers.DistortionPerformerChooser;
 import net.exsul.screenunify.metrics.Metrics;
 
@@ -22,7 +20,7 @@ public class BitmapsCore {
 
     private void InitDistortion() {
         DistortionPerformerChooser<Bitmap> ret = new DistortionPerformerChooser<Bitmap>();
-        ret.put(RotationDistortionInfo.class, new RotationDistortionBitmap());
+        ret.put(RotationDistortion.class, new RotationPerformerBitmap());
     }
 
     BitmapContainer db() {
@@ -52,9 +50,9 @@ public class BitmapsCore {
     }
 
     @Deprecated
-    public DistortionInfo defaultDistortion() {
+    public Distortion defaultDistortion() {
         assert(screenMetrics != null);
-        DistortionInfo ret = new NullDistortionInfo();
+        Distortion ret = new NullDistortion();
 
         /* TODO: Scaling bitmap as you want
         int newW = (int)(screenMetrics.w() * nw);
@@ -64,7 +62,7 @@ public class BitmapsCore {
         scaledBitmap = Bitmap.createScaledBitmap(bitmapInfoDeprecated.bitmap(), newW, newH, true);
         */
         if (screenMetrics.w() < screenMetrics.h())
-            ret.next(new RotationDistortionInfo(90));
+            ret.next(new RotationDistortion(90));
         return ret;
     }
 }

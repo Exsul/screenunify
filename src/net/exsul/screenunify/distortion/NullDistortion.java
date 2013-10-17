@@ -1,7 +1,8 @@
 package net.exsul.screenunify.distortion;
 
-public class NullDistortion<T> extends Distortion<T>  {
-    public T apply( final T obj ) {
+public class NullDistortion extends Distortion {
+    @Override
+    public Object apply( final Object obj ) {
         return obj;
     }
 }

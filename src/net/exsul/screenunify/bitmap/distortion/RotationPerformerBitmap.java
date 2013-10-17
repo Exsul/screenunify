@@ -2,10 +2,9 @@ package net.exsul.screenunify.bitmap.distortion;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
-import net.exsul.screenunify.distortion.RotationDistortion;
-import net.exsul.screenunify.distortion.info.RotationDistortionInfo;
+import net.exsul.screenunify.performer.RotationPerformer;
 
-public class RotationDistortionBitmap extends RotationDistortion<Bitmap> {
+public class RotationPerformerBitmap extends RotationPerformer<Bitmap> {
     @Override
     public Bitmap apply( final Bitmap origin ) {
         Matrix matrix = new Matrix();
@@ -14,6 +13,6 @@ public class RotationDistortionBitmap extends RotationDistortion<Bitmap> {
 
         Bitmap rotatedBitmap = Bitmap.createBitmap(origin, 0, 0, origin.getWidth(), origin.getHeight(), matrix, true);
 
-        return super.apply(rotatedBitmap);
+        return rotatedBitmap;
     }
 }

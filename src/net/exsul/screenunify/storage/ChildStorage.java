@@ -1,8 +1,5 @@
 package net.exsul.screenunify.storage;
 
-import net.exsul.screenunify.distortion.Distortion;
-import net.exsul.screenunify.distortion.info.DistortionInfo;
-
 public class ChildStorage<BaseClassT, BaseSimilarT> extends GenericStorage<BaseClassT, String> {
 
     public /*<T extends BaseSimilarT>*/ BaseClassT get( final Class obj ) {

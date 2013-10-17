@@ -2,10 +2,10 @@ package net.exsul.screenunify.manager;
 
 import android.graphics.Bitmap;
 import net.exsul.screenunify.storage.AbstractStorage;
-import net.exsul.screenunify.distortion.info.DistortionInfo;
+import net.exsul.screenunify.distortion.Distortion;
 
 public class BitmapManager implements AbstractStorage<Bitmap, Integer> {
-    private DistortionInfo distortion;
+    private Distortion distortion;
 
     public BitmapManager( final BitmapManagerConstructor c ) {
         // TODO: Initialise manager

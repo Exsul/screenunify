@@ -3,30 +3,30 @@ package net.exsul.screenunify.bitmap;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import net.exsul.screenunify.distortion.Distortion;
-import net.exsul.screenunify.distortion.info.DistortionInfo;
+import net.exsul.screenunify.performer.Performer;
 
 public class BitmapDistortionStorage extends BitmapStorage {
-    private DistortionInfo distortion;
+    private Distortion distortion;
 
-    public BitmapDistortionStorage(final Resources _resources, final DistortionInfo _distortion) {
+    public BitmapDistortionStorage(final Resources _resources, final Distortion _distortion) {
         super(_resources);
         distortion = _distortion;
         throw new UnsupportedOperationException("This implementation need conclusion at issues/8");
     }
 
     @Deprecated
-    private Distortion<Bitmap> dist;
+    private Performer dist;
 
     @Deprecated
-    public BitmapDistortionStorage(final Resources _resources, final Distortion<Bitmap> _distortion) {
+    public BitmapDistortionStorage(final Resources _resources, final Performer _performer) {
         super(_resources);
-        dist = _distortion;
+        dist = _performer;
     }
 
 
     @Override
     protected Bitmap load(final int id) {
         Bitmap t = super.load(id);
-        return dist.apply(t);
+        return distortion.apply(t);
     }
 }
