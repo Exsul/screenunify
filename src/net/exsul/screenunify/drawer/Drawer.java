@@ -2,10 +2,10 @@ package net.exsul.screenunify.drawer;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import net.exsul.screenunify.bitmap.BitmapInfo_deprecated;
+import net.exsul.screenunify.resource.bitmap.BitmapInfo_deprecated;
 import net.exsul.screenunify.coords.Coordinate;
 import net.exsul.screenunify.coords.convertation.base.CoordinatesConverter;
-import net.exsul.screenunify.text.Text;
+import net.exsul.screenunify.primitives.text.Text;
 
 /**
  * Класс отрисовки графических примитивов.

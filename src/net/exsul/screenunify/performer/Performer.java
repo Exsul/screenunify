@@ -5,7 +5,7 @@ public abstract class Performer<T> {
 
     public abstract T apply( final T obj );
 
-    public void update( final net.exsul.screenunify.distortion.Distortion obj ) {
+    public void update( final net.exsul.screenunify.resource.distortion.Distortion obj ) {
 
     }
 }
