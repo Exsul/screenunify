@@ -49,7 +49,6 @@ public class BitmapsCore {
         screenMetrics = metrics;
     }
 
-    @Deprecated
     public Distortion defaultDistortion() {
         assert(screenMetrics != null);
         Distortion ret = new NullDistortion();

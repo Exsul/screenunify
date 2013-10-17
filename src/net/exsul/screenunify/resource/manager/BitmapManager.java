@@ -12,6 +12,14 @@ public class BitmapManager implements AbstractStorage<Bitmap, Integer> {
         throw new UnsupportedOperationException("Need contruction implement");
     }
 
+    public BitmapManager( final Distortion a ) {
+        distortion = a;
+    }
+
+    public BitmapManager() {
+        this(BitmapsCore.getInstance().defaultDistortion());
+    }
+
     public Bitmap get( final Integer id ) {
         return BitmapsCore.getInstance().db().get(distortion, id);
     }
