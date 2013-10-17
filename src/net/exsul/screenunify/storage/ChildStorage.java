@@ -4,9 +4,15 @@ import net.exsul.screenunify.distortion.Distortion;
 import net.exsul.screenunify.distortion.info.DistortionInfo;
 
 public class ChildStorage<BaseClassT, BaseSimilarT> extends GenericStorage<BaseClassT, String> {
-    public <T extends BaseSimilarT> BaseClassT get( final T obj ) {
-       String name = determineClassName(obj.getClass());
+
+    public /*<T extends BaseSimilarT>*/ BaseClassT get( final Class obj ) {
+       String name = determineClassName(obj);
        return super.get(name);
+    }
+
+    public /*<T extends BaseSimilarT>*/ BaseClassT put( final Class exemplar, BaseClassT chooser ) {
+        String name = determineClassName(exemplar);
+        return super.put(name, chooser);
     }
 
     private String determineClassName( final Class obj ) {

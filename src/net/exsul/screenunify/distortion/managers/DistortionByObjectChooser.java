@@ -1,4 +1,4 @@
-package net.exsul.screenunify.distortion;
+package net.exsul.screenunify.distortion.managers;
 
 import net.exsul.screenunify.storage.GenericStorage;
 

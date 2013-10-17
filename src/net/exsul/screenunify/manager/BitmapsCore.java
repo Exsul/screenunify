@@ -14,6 +14,14 @@ public class BitmapsCore {
     private BitmapContainer db;
     private static BitmapsCore core;
 
+    BitmapsCore() {
+      InitDistortion();
+    }
+
+    private void InitDistortion() {
+
+    }
+
     BitmapContainer db() {
         assert(db != null);
         return db;

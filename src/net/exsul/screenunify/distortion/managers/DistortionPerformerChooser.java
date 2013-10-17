@@ -1,5 +1,6 @@
-package net.exsul.screenunify.distortion;
+package net.exsul.screenunify.distortion.managers;
 
+import net.exsul.screenunify.distortion.Distortion;
 import net.exsul.screenunify.distortion.info.DistortionInfo;
 import net.exsul.screenunify.storage.ChildStorage;
 import net.exsul.screenunify.storage.GenericStorage;
