@@ -2,11 +2,13 @@ package net.exsul.screenunify.resource.manager;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
+import net.exsul.screenunify.resource.bitmap.distortion.ScalePerformerBitmap;
 import net.exsul.screenunify.resource.bitmap.storage.BitmapContainer;
 import net.exsul.screenunify.resource.bitmap.distortion.RotationPerformerBitmap;
 import net.exsul.screenunify.resource.distortion.Distortion;
 import net.exsul.screenunify.resource.distortion.NullDistortion;
 import net.exsul.screenunify.resource.distortion.RotationDistortion;
+import net.exsul.screenunify.resource.distortion.ScaleDistortion;
 import net.exsul.screenunify.resource.distortion.managers.DistortionPerformerChooser;
 import net.exsul.screenunify.metrics.Metrics;
 
@@ -21,6 +23,7 @@ public class BitmapsCore {
     private void InitDistortion() {
         DistortionPerformerChooser<Bitmap> ret = new DistortionPerformerChooser<Bitmap>();
         ret.put(RotationDistortion.class, new RotationPerformerBitmap());
+        ret.put(ScaleDistortion.class, new ScalePerformerBitmap());
     }
 
     BitmapContainer db() {
