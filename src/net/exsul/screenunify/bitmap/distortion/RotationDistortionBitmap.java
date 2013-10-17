@@ -9,6 +9,7 @@ public class RotationDistortionBitmap extends RotationDistortion<Bitmap> {
     public RotationDistortionBitmap( final RotationDistortionInfo a ) {
         super(a);
     }
+
     @Override
     public Bitmap apply( final Bitmap origin ) {
         Matrix matrix = new Matrix();
@@ -17,6 +18,6 @@ public class RotationDistortionBitmap extends RotationDistortion<Bitmap> {
 
         Bitmap rotatedBitmap = Bitmap.createBitmap(origin, 0, 0, origin.getWidth(), origin.getHeight(), matrix, true);
 
-        return rotatedBitmap;
+        return super.apply(rotatedBitmap);
     }
 }
