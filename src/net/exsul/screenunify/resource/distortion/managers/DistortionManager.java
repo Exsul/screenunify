@@ -1,7 +1,9 @@
 package net.exsul.screenunify.resource.distortion.managers;
 
+import net.exsul.screenunify.performer.NullPerformer;
 import net.exsul.screenunify.resource.distortion.Distortion;
 import net.exsul.screenunify.performer.Performer;
+import net.exsul.screenunify.resource.distortion.NullDistortion;
 
 public class DistortionManager {
     private static DistortionByObjectChooser db = new DistortionByObjectChooser();
