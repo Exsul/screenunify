@@ -16,8 +16,8 @@
     <file path="/BitmapsCore.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382037788519" ignored="false" />
     <file path="/DistortionManager.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382039615592" ignored="false" />
     <file path="/Singletone.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382034314702" ignored="false" />
-    <file path="/Distortion.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382039811266" ignored="false" />
-    <file path="/RotationDistortion.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382039725446" ignored="false" />
+    <file path="/Distortion.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382044880992" ignored="false" />
+    <file path="/RotationDistortion.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382045094488" ignored="false" />
     <file path="/DistortionInfo.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382039821440" ignored="false" />
     <file path="/NullDistortion.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382037770444" ignored="false" />
     <file path="/BitmapContainer.java" changelist="dc74bccb-1c5d-4a39-9562-bb50252b226a" time="1382037880088" ignored="false" />
@@ -100,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BitmapsCore.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BitmapsCore.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/manager/BitmapsCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="40" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.5974026">
+            <state line="41" column="32" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,7 +112,7 @@
       <file leaf-file-name="BitmapManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/manager/BitmapManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="28" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+            <state line="13" column="34" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,7 +121,16 @@
       <file leaf-file-name="Distortion.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/Distortion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+            <state line="18" column="33" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RotationDistortion.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/RotationDistortion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="320" selection-end="320" vertical-scroll-proportion="0.34228188">
               <folding />
             </state>
           </provider>
@@ -166,16 +175,7 @@
       <file leaf-file-name="DistortionManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/managers/DistortionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="34" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Performer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/performer/Performer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="22" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
+            <state line="14" column="40" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,8 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/net/exsul/screenunify/distortion/info/DistortionInfo.java" />
-        <option value="$PROJECT_DIR$/src/net/exsul/screenunify/distortion/info/NullDistortion.java" />
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/distortion/info/NullDistortionInfo.java" />
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/manager/BitmapsCore.java" />
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/bitmap/BitmapContainer.java" />
@@ -207,6 +205,8 @@
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/drawer/Drawer.java" />
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/resource/manager/BitmapsCore.java" />
         <option value="$PROJECT_DIR$/src/net/exsul/screenunify/resource/manager/BitmapManager.java" />
+        <option value="$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/Distortion.java" />
+        <option value="$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/RotationDistortion.java" />
       </list>
     </option>
   </component>
@@ -313,32 +313,6 @@
               <option name="myItemId" value="resource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screenunify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screenunify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screenunify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -362,37 +336,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bitmap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screenunify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screenunify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screenunify" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bitmap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
+              <option name="myItemId" value="distortion" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -637,7 +581,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3281493" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281493" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -717,13 +661,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/storage/GenericStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="346" selection-end="591" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/storage/ChildStorage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
@@ -761,20 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/managers/DistortionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="34" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/performer/RotationPerformer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="54" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/performer/Performer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="22" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
@@ -789,23 +712,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/Distortion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/coords/convertation/CoordinatesRotationConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="19" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/bitmap/distortion/RotationPerformerBitmap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="51" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -817,16 +726,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/manager/BitmapManager.java">
+    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/manager/BitmapsCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+        <state line="41" column="32" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/manager/BitmapsCore.java">
+    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/manager/BitmapManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="40" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.5974026">
+        <state line="13" column="34" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/managers/DistortionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="40" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/performer/RotationPerformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="54" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/bitmap/distortion/RotationPerformerBitmap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="51" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/Distortion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/exsul/screenunify/resource/distortion/RotationDistortion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="320" selection-end="320" vertical-scroll-proportion="0.34228188">
           <folding />
         </state>
       </provider>
