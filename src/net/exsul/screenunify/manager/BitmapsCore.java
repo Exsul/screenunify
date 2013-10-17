@@ -23,7 +23,7 @@ public class BitmapsCore {
         BitmapsCore core = getInstance();
         if (core.db != null)
             return;
-        getInstance().db = new BitmapContainer(_resources);
+        getInstance().db = new BitmapContainer(_resources, core.defaultDistortion());
     }
 
     static BitmapsCore getInstance() {
